@@ -28,6 +28,7 @@
 
 body {
    background-color: var(--site-bg-color);
+   max-width: 1080px;
 }
 
 h1 {
