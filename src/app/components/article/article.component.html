@@ -1,0 +1,6 @@
+
+<h1 [hidden]="!showTitle">{{articleDetail.title}}</h1>
+<h2 [hidden]="!showSubTitle">{{articleDetail.subtitle}}</h2>
+<h3 [hidden]="!showDate">{{articleDetail.date}}</h3>
+<div class="articlecontent" [innerHTML]="articleDetail.content"></div>
+<br class="clr" />

@@ -1,1 +1,131 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+@import "~@fortawesome/fontawesome-free/css/all.css";
+*/
+
+:root {
+   --jbc-green: #009966;
+   --jbc-lt-green: #DFF9F0;
+   --light: #f2f3f4 ;
+   --dark: #333333;
+   --black: #000000;
+
+
+   --main-color: var(--jbc-green);
+   --site-bg-color: var(--dark);
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   line-height: 1.5;
+}
+
+body {
+   background-color: var(--site-bg-color);
+}
+
+h1 {
+   color: var(--main-color) ;
+}
+
+.title {
+   margin-top: 0;
+   padding-top: 0;
+   font-size: 1.5em;
+   font-weight: bold;
+   color: var(--main-color) ;
+   vertical-align: middle;
+}
+
+a {
+   color: var(--main-color) ;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.logo-img {
+   height: 25px;
+   vertical-align: middle;
+}
+
+.primary-section {
+   display: block;
+   background-color: var(--light);
+   margin: .2em;
+   padding: 1em;
+   border-radius: .3em;
+}
+
+.main-text {
+   color: var(--dark);
+}
+
+.headersection {
+   min-height: 5em;
+}
+
+.mainsection {
+   min-height: 5em;
+}
+
+.footersection {
+   min-height: 5em;
+   text-align: center ;
+}
+
+.clr {
+   clear: both;
+}
+
+label {
+   color: #04AA6D ;
+   font-weight: bold;
+ }
+ 
+ input {
+   width: 300px;
+   border-radius: 5px;
+   border: none;
+ }
+ 
+ input[type="submit" i] {
+   color: #ffffff;
+   font-weight: bold;
+   background-color: #04AA6D;
+   padding: 10px;
+   border-radius: 5px;
+   border-width: 0px;
+   border-style: outset;
+   border-color: #04AA6D;  
+ }
+ 
+ textarea {
+   width: 300px;
+   height: 150px;
+   border-radius: 1px;
+   border: none;
+ }
+ 
+ .topimg {
+   max-width: 300px;
+   float: left;
+   margin-right: 1em;
+   margin-bottom: 1em;
+}
+
+.topimgright {
+   max-width: 300px;
+   float: right;
+   margin-right: 1em;
+   margin-bottom: 1em;
+}
+
+.articlecontent {
+   min-height: 25rem;
+}

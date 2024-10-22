@@ -1,0 +1,15 @@
+<app-articles
+   *ngIf="!id"
+   typeFilter='code'
+   segment='code'
+></app-articles>
+<hr />
+<app-article
+   *ngIf="id"
+   [id]=id
+   segment='code'
+   [showTitle]=true
+   [showSubTitle]=true
+   [showDate]=true
+>
+</app-article>

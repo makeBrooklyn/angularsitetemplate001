@@ -1,0 +1,9 @@
+<div class="clr" *ngFor="let article of articleList">
+   <a href="/{{segment}}/{{article.id}}">
+      <img src="{{article.mainimg}}" class="topimg" />
+      <h1>{{ article.title }}</h1>
+   </a>
+      <h2>{{ article.subtitle }}</h2>
+      <p>{{article.preview}}</p>
+      <hr class="clr" />
+</div>

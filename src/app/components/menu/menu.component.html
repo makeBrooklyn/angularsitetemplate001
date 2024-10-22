@@ -1,0 +1,19 @@
+<div class="menu-btn menu-icon">
+  <i class="{{menu_icon}}" (click)="openMenu()"></i>
+</div>
+<div class="desktop_menu" [class.mobile_menu]="menuValue">
+   <ul>
+      @for (item of items; track $index) {
+         <li (click)="closeMenu()">
+            <a 
+            class="menu-link"
+            [routerLink]="item.routeLink"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            >
+               <i class="menu-icon" [class]="item.icon"></i><span>{{item.label}}</span>
+            </a>
+         </li>   
+      }
+   </ul>
+</div>
