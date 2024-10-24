@@ -154,3 +154,7 @@ section.codeblock {
 .articlecontent {
    min-height: 25rem;
 }
+
+ol {
+   margin: 1rem;
+}
