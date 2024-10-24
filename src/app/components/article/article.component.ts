@@ -3,11 +3,13 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ArticleDetail } from '../../interfaces/ArticleDetail';
 import { ArticlesService } from '../../services/articles.service';
+import { CommonModule } from '@angular/common';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-article',
   standalone: true,
-  imports: [FontAwesomeModule, RouterModule],
+  imports: [ CommonModule, FontAwesomeModule, RouterModule ],
   templateUrl: './article.component.html',
   styleUrl: './article.component.css'
 })
@@ -29,7 +31,7 @@ export class ArticleComponent {
   articleDetail:ArticleDetail = this.articlesService.getArticleNotFound();
   
 
-  constructor() {}
+  constructor(private sanitized: DomSanitizer) {}
   
   ngOnInit(): void {
     this.getArticleDetail();
@@ -37,5 +39,6 @@ export class ArticleComponent {
 
   getArticleDetail() {
     this.articleDetail = this.articlesService.getArticleById(this.id);
+    this.articleDetail.safeHTML = this.sanitized.bypassSecurityTrustHtml(this.articleDetail.content);
   }
 }

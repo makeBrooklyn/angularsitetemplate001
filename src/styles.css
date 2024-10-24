@@ -115,6 +115,12 @@ label {
    border: none;
  }
  
+section.codeblock {
+   padding: .5rem;
+   background: black;
+   overflow: scroll;
+}
+
  .topimg {
    max-width: 300px;
    float: left;
@@ -127,6 +133,22 @@ label {
    float: right;
    margin-right: 1em;
    margin-bottom: 1em;
+}
+
+.inlinerightimg {
+   max-width: 300px;
+   float: right;
+   margin-left: 1em;
+   margin-bottom: 1em;
+   border: 1px solid #333333;
+}
+
+.inlineleftimg {
+   max-width: 300px;
+   float: left;
+   margin-right: 1em;
+   margin-bottom: 1em;
+   border: 1px solid #333333;
 }
 
 .articlecontent {
