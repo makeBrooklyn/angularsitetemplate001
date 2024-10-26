@@ -489,9 +489,9 @@ export class ArticlesService {
         title: "Goober MVC",
         subtitle: "A simple headless MVC",
         mainimg: "/articles/3/goober.jpg",
-        preview: "This is A simple MVC I'm working on as a learning project. At the moment it has no dashboard and doesn't use a DB at all so really more of an MV. I'm sure that will change as I add to it over time.",
+        preview: "This is A simple MVC I'm working on as a learning project. At the moment it has no dashboard and doesn't use a DB at all so really more of a VC. I'm sure that will change as I add to it over time.",
         safeHTML: undefined,
-        content: "<img class='topimg' src='/articles/3/goober.jpg'>This is A simple MVC I'm working onas a learning project. At the moment it has no dashboard and doesn't use a DB at all so really more of an MV. I'm sure  that will change as I add to it over time. Right now I'm just sorting out the pathhandlers and theme application. There's not too much to look at yet, but if you want to, the code including the container configs are all in the repo on my <a href=\"https://github.com/makeBrooklyn/goober\">GitHub.</a>",
+        content: "<img class='topimg' src='/articles/3/goober.jpg'>This is A simple MVC I'm working onas a learning project. At the moment it has no dashboard and doesn't use a DB at all so really more of a VC. I'm sure  that will change as I add to it over time. Right now I'm just sorting out the pathhandlers and theme application. There's not too much to look at yet, but if you want to, the code including the container configs are all in the repo on my <a href=\"https://github.com/makeBrooklyn/goober\">GitHub.</a>",
         slug: "goober",
         date: new Date('2024-10-03'),
         type: "code"
