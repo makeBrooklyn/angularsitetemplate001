@@ -131,7 +131,7 @@ section.codeblock {
 .topimgright {
    max-width: 300px;
    float: right;
-   margin-right: 1em;
+   margin-left: 1em;
    margin-bottom: 1em;
 }
 
@@ -165,6 +165,13 @@ ol {
       width: 100%;
       float: left;
       margin-right: 1em;
+      margin-bottom: 1em;
+   }
+   .topimgright {
+      max-width: 100%;
+      width: 100%;
+      float: right;
+      margin-left: 1em;
       margin-bottom: 1em;
    }
 }
