@@ -4,16 +4,16 @@
 <div class="desktop_menu" [class.mobile_menu]="menuValue">
    <ul>
       @for (item of items; track $index) {
-         <li (click)="closeMenu()">
-            <a 
+         <a 
             class="menu-link"
             [routerLink]="item.routeLink"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{exact: true}"
-            >
+         >
+         <li (click)="closeMenu()">
                <i class="menu-icon" [class]="item.icon"></i><span>{{item.label}}</span>
-            </a>
          </li>   
-      }
+      </a>
+   }
    </ul>
 </div>
